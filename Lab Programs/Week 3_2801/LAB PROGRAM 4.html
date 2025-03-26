@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects Example</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Box Shadow Effect */
+        .box-shadow {
+            background-color: white;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+        }
+
+        /* Text Shadow Effect */
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hover Effect */
+        .hover-effect {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .hover-effect:hover {
+            background-color: #2980b9;
+        }
+
+        /* Opacity Effect */
+        .opacity-box {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            opacity: 0.7;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        /* CSS Animation */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animated-box {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #2ecc71;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            animation: bounce 1s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Effects Example</h1>
+
+    <div class="box-shadow">
+        This div has a box shadow effect.
+    </div>
+
+    <div class="opacity-box">
+        This box has an opacity effect (70% visible).
+    </div>
+
+    <div class="hover-effect">
+        Hover Over Me
+    </div>
+
+    <div class="animated-box">
+        Animated Button (Bouncing)
+    </div>
+
+</body>
+</html>
