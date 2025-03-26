@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        errorMessage.style.display = "none"; // If everything is correct, hide error message
+        errorMessage.style.display = "none";
     });
 });
